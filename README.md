@@ -8,23 +8,30 @@ password: vncpasswd
 port: 5902  
 
 # Attach volume block
-Create and Attach volume block to instance.
+Create and Attach volume block to the instance.
+
 Display details about block devices
+
 ``` lsblk ```
 
 Create file system in the chosen disk
+
 ``` sudo mkfs -t ext3 /dev/sdb ```
 
 Create a directory to which you will mount the disk for example:
+
 ``` mkdir /mnt/OBA ```
 
 Mount the volume to the directory created
+
 ``` sudo mount /dev/sdb /mnt/OBA ```
 
 Update the File System Table
+
 ``` sudo nano /etc/fstab ```
 
 Add at the end of the file 
+
 ``` /dev/sdb /mnt/OBA ext3 defaults, nofail 0,0 ```
 
 Reboot the instance
