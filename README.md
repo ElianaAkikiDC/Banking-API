@@ -11,7 +11,6 @@ port: 5902
 Create and Attach volume block to the instance.
 
 Display details about block devices
-
 ``` lsblk ```
 
 Create file system in the chosen disk
