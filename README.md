@@ -11,6 +11,7 @@ port: 5902
 Create and Attach volume block to instance.
 Display details about block devices
 ``` lsblk ```
+
 Create file system in the chosen disk
 ``` sudo mkfs -t ext3 /dev/sdb ```
 Create a directory to which you will mount the disk for example:
