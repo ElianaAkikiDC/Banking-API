@@ -96,6 +96,42 @@ Install java using the rpm package
 
 ```sudo rpm -ivh jdk-11_linux-x64_bin.rpm```
 
+# 4- Installing Oracle database 19C and Configuring it
+
+     Unzip the downloaded folder
+
+  ``` ./runInstaller```
+  
+  **Configuration:**
+
+  **Configuration Option:** Create and configure a single instance database
+
+  **System Class:** Server Class
+
+  **Database Edition:** Enterprise Edition
+
+  **Installation Location:** choose location eg:```/mnt/app/oracle```
+
+  **Configuration Type:** General Purpose/Transaction Processing
+  
+  **Database Identifiers:** 
+  
+  Global Database Name: orcl.subnet03141637.vcn031416 
+  
+  SID: oracle 
+  
+  Check the ```Create as Containerr database``` 
+  
+  Pluggable database name: orclpdb
+
+  **Configuration Options:** 25604 MB
+
+  **Database Storage:** File System 
+
+  Specify db file location: /mnt/app/oracle/oradata
+
+  **Scheme Passwords:** Use same password for all accounts (pass: admin)
+
 # 4- Download Oracle Weblogic Server 14.1.1.0.0 on Oracle software Delivery Cloud
 
 # 5- Download Python Package: urwid 2.1.2 on Oracle software Delivery Cloud
