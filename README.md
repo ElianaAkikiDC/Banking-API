@@ -20,11 +20,11 @@ Create file system in the chosen disk
 
 Create a directory to which you will mount the disk for example:
 
-``` mkdir /mnt/OBA ```
+``` mkdir /OBA ```
 
 Mount the volume to the directory created
 
-``` sudo mount /dev/sdb /mnt/OBA ```
+``` sudo mount /dev/sdb /OBA ```
 
 Update the File System Table
 
@@ -32,7 +32,7 @@ Update the File System Table
 
 Add at the end of the file 
 
-``` /dev/sdb /mnt/OBA ext3 defaults, nofail 0,0 ```
+``` /dev/sdb /OBA ext3 defaults, nofail 0,0 ```
 
 Reboot the instance
 
@@ -44,9 +44,9 @@ Add 20gb swap file
 Give permissions
 
 ```
-chmod 0600 /swapfile1
-mkswap /swapfile1
-swapon /swapfile1
+chmod 0600 /OBA/swapfile
+mkswap /OBA/swapfile
+swapon /OBA/swapfile
 ```
 
 Add to /etc/fstab
@@ -54,7 +54,7 @@ Add to /etc/fstab
 ```
 vi /etc/fstab
 
-/swapfile1 swap swap defaults 0 0
+/OBA/swapfile swap swap defaults 0 0
 ```
 Check swap space
 
