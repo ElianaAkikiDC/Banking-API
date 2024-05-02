@@ -90,6 +90,12 @@ Download it from: https://sourceforge.net/projects/tigervnc/
 
 # 3- Download Oracle Java Development Kit 11.0.16 on Oracle software Delivery Cloud
 
+Unzip the downloaded folder
+
+Install java using the rpm package
+
+```sudo rpm -ivh jdk-11_linux-x64_bin.rpm```
+
 # 4- Download Oracle Weblogic Server 14.1.1.0.0 on Oracle software Delivery Cloud
 
 # 5- Download Python Package: urwid 2.1.2 on Oracle software Delivery Cloud
