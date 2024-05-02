@@ -36,6 +36,32 @@ Add at the end of the file
 
 Reboot the instance
 
+#Increase Swapfile
+
+Add 20gb swap file
+
+```dd if=/dev/zero of=/swapfile1 bs=1024 count=20971520```
+Give permissions
+
+```
+chmod 0600 /swapfile1
+mkswap /swapfile1
+swapon /swapfile1
+```
+
+Add to /etc/fstab
+
+```
+vi /etc/fstab
+
+/swapfile1 swap swap defaults 0 0
+```
+Check swap space
+
+```
+cat /proc/swaps
+```
+
 # 1- Create a VM oracle linux 8.3   
 Create an instance on Oracle Cloud Infrastructure with 4 ocpu and 64 GRAM    
 
