@@ -36,7 +36,7 @@ Add at the end of the file
 
 Reboot the instance
 
-#Increase Swapfile
+# Increase Swapfile
 
 Add 20gb swap file
 
