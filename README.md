@@ -164,6 +164,31 @@ Install java using the rpm package
 ```./ wget.sh```
 
 ``` java -jar fmw_14.1.1.0.0_wls.jar ```
+# 5- Install Oracle Web Server
+**install some important packages before:**
+
+~~~
+dnf install -y libnsl
+~~~
+
+~~~
+libnsl.i686, libnsl2, libnsl2.i686, 
+vsftpd, binutils, glibc, 
+glibc-devel, gcc, cpp, 
+glibc-headers, gcc-c++, libstdc++, 
+make, ksh, elfutils-libelf, 
+elfutils-libelfdevel, sysstat,
+libaio, libaio-devel,
+unixODBC,unixODBC-devel
+~~~
+Download the ```compat-libcap1-1.10-7.el7.x86_64.rpm``` and ```compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm``` from here https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html
+
+install the .rpm files using this command:
+
+~~~
+yum -y localinstall compat-libcap1-1.10-7.el7.x86_64.rpm
+yum -y localinstall compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
+~~~
 
 # 5- Download Python Package: urwid 2.1.2 on Oracle software Delivery Cloud
 
