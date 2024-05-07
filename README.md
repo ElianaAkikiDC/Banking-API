@@ -158,7 +158,12 @@ Install java using the rpm package
 
   **Scheme Passwords:** Use same password for all accounts (pass: admin)
 
-# 4- Download Oracle Weblogic Server 14.1.1.0.0 on Oracle software Delivery Cloud
+# 4- Download and Install Oracle Weblogic Server 14.1.1.0.0 on Oracle software Delivery Cloud
+```cd Weblogic```
+
+```./ wget.sh```
+
+``` java -jar fmw_14.1.1.0.0_wls.jar ```
 
 # 5- Download Python Package: urwid 2.1.2 on Oracle software Delivery Cloud
 
