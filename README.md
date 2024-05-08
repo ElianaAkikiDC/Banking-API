@@ -189,7 +189,17 @@ install the .rpm files using this command:
 yum -y localinstall compat-libcap1-1.10-7.el7.x86_64.rpm
 yum -y localinstall compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
 ~~~
-
+# 5- Install Python 3.8
+~~~
+mkdir python3.8
+sudo wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tgz
+sudo tar xzf Python-3.8.12.tgz
+cd Python-3.8.12
+sudo ./configure --enable-optimizations
+sudo make altinstall
+cd python3.8
+sudo rm -f Python-3.8.12.tgz
+~~~
 # 5- Download Python Package: urwid 2.1.2 on Oracle software Delivery Cloud
 
 # 6- Download Gradle 7.5.1 on Oracle software Delivery Cloud
