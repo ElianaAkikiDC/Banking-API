@@ -81,6 +81,10 @@ Execute the following commands in a terminal in Putty:
 ```chmod +x wget.sh```  
 ```ls -ltr```   
 ```./wget.sh``` **  
+Download the SQL developer on linux and install it
+~~~
+rpm -Uhv sqldeveloper-23.1.1-345.2114.noarch.rpm
+~~~
 
 # Install VNC on Oracle Linux 8  
 Use the following tutorial: https://youtu.be/Z5vhER7K34E  
