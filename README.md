@@ -85,6 +85,16 @@ Download the SQL developer on linux and install it
 ~~~
 rpm -Uhv sqldeveloper-23.1.1-345.2114.noarch.rpm
 ~~~
+to run sqlplus use:
+~~~
+sqlplus sys as sysdba
+~~~
+ to set the listeners of the oracle database 19 use:
+~~~
+alter system set local_listener='(address=(protocol=tcp)(host=localhost)(port=1521))' scope=both;
+alter system register;
+show parameter local_listener;
+~~~
 
 # Install VNC on Oracle Linux 8  
 Use the following tutorial: https://youtu.be/Z5vhER7K34E  
@@ -203,8 +213,11 @@ sudo ./configure --enable-optimizations
 sudo make altinstall
 cd python3.8
 sudo rm -f Python-3.8.12.tgz
+sudo ln -sfn /usr/local/bin/python3.8 /usr/bin/python
+pip3.8 install --upgrade pip
+pip3.8 install cx-Oracle==8.3
+sudo pip3.8 install urwid==2.1.2
 ~~~
-# 5- Download Python Package: urwid 2.1.2 on Oracle software Delivery Cloud
 
 # 6- Download Gradle 7.5.1 on Oracle software Delivery Cloud
 
