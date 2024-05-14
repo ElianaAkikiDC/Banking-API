@@ -203,9 +203,33 @@ install the .rpm files using this command:
 yum -y localinstall compat-libcap1-1.10-7.el7.x86_64.rpm
 yum -y localinstall compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
 ~~~
-# Run web logic
+#6- Install and Run web logic
+Configuration of Weblogic:
+# Creation Domain:
+Select Create a new domain
+Domain Location: /OBA/app/oracle/product/14.1.1/user_projects/domains/base_domains
+# Templates:
+Select Create Domain using Product Templates
+And choose from Available Templates: Basic Weblogic Server Domain -14.1.1.0.0 (wlserver)*
+# Administrator Account: 
+Name: weblogic
+# Domain Mode and JDK:
+Choose Production 
+and the JDK Location: /OBA/Java/jdk-11.0.23
+# Advanced Configuration:
+Check Adminstration Server and Node Manager
+# Administration Server:
+Server Name: Clip
+Listen Address: All local addresses
+Listen Port: 7001
+Enable SSL 
+SSL Listen Port: 7002
+# Node Manager:
+Node Manager Type:Per Domain Default Location
+Node Manager Credentials: Username: admin
+
 ~~~
-cd /OBA/app/oracle/product/14.1.1/domains/base_domains
+cd /OBA/app/oracle/product/14.1.1/user_projects/domains/base_domains
 ./startWebLogic.sh
 ~~~
 Enter the username:weblogic and the pass
