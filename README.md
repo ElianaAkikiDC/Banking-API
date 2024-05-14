@@ -239,7 +239,6 @@ In case this error returns:
 ~~~
 kill the running server:
 ~~~
-[12:04 PM] Tony Dfouny
 ps -u
 kill -9 <PID>
 ~~~
