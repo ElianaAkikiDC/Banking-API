@@ -203,6 +203,22 @@ install the .rpm files using this command:
 yum -y localinstall compat-libcap1-1.10-7.el7.x86_64.rpm
 yum -y localinstall compat-libstdc++-33-3.2.3-72.el7.x86_64.rpm
 ~~~
+# Run web logic
+~~~
+cd /OBA/app/oracle/product/14.1.1/domains/base_domains
+./startWebLogic.sh
+~~~
+Enter the username:weblogic and the pass
+In case this error returns: 
+~~~
+<Could not get the server file lock. Ensure that another server is not running in the same directory. Retrying for another 60 seconds.>
+~~~
+kill the running server:
+~~~
+[12:04 PM] Tony Dfouny
+ps -u
+kill -9 <PID>
+~~~
 # 5- Install Python 3.8
 ~~~
 mkdir python3.8
